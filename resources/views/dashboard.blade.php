@@ -177,7 +177,7 @@
                             <a class="btn bg-teal" style="width: 100%" href="{{ route('hardware.create') }}">{{ trans('general.new_asset') }}</a>
                             @endcan
                         </div>
-                        <div class="col-md-2">
+                        <!-- <div class="col-md-2">
                             @can('create', \App\Models\License::class)
                                 <a class="btn bg-maroon" style="width: 100%" href="{{ route('licenses.create') }}">{{ trans('general.new_license') }}</a>
                             @endcan
@@ -196,7 +196,7 @@
                             @can('create', \App\Models\Component::class)
                                 <a class="btn bg-yellow" style="width: 100%" href="{{ route('components.create') }}">{{ trans('general.new_component') }}</a>
                             @endcan
-                        </div>
+                        </div> -->
                         <div class="col-md-2">
                             @can('create', \App\Models\User::class)
                                 <a class="btn bg-light-blue" style="width: 100%" href="{{ route('users.create') }}">{{ trans('general.new_user') }}</a>
@@ -331,7 +331,7 @@
                                         <x-icon type="assets" />
 										<span class="sr-only">{{ trans('general.asset_count') }}</span>
 									</th>
-									<th class="col-sm-1" data-visible="true" data-field="accessories_count" data-sortable="true">
+									<!-- <th class="col-sm-1" data-visible="true" data-field="accessories_count" data-sortable="true">
                                         <x-icon type="accessories" />
 										<span class="sr-only">{{ trans('general.accessories_count') }}</span>
 									</th>
@@ -346,7 +346,7 @@
 									<th class="col-sm-1" data-visible="true" data-field="licenses_count" data-sortable="true">
                                         <x-icon type="licenses" />
 										<span class="sr-only">{{ trans('general.licenses_count') }}</span>
-									</th>
+									</th> -->
 								</tr>
 								</thead>
 							</table>
@@ -461,7 +461,7 @@
                                     <x-icon type="assets" />
                                     <span class="sr-only">{{ trans('general.asset_count') }}</span>
                                 </th>
-                                <th class="col-sm-1" data-visible="true" data-field="accessories_count" data-sortable="true">
+                                <!-- <th class="col-sm-1" data-visible="true" data-field="accessories_count" data-sortable="true">
                                     <x-icon type="licenses" />
                                     <span class="sr-only">{{ trans('general.accessories_count') }}</span>
                                 </th>
@@ -476,7 +476,7 @@
                                 <th class="col-sm-1" data-visible="true" data-field="licenses_count" data-sortable="true">
                                     <x-icon type="licenses" />
                                     <span class="sr-only">{{ trans('general.licenses_count') }}</span>
-                                </th>
+                                </th> -->
                             </tr>
                             </thead>
                         </table>

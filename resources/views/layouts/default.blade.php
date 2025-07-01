@@ -150,7 +150,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                     </a>
                                 </li>
                             @endcan
-                            @can('view', \App\Models\License::class)
+                            <!-- @can('view', \App\Models\License::class)
                                 <li aria-hidden="true"{!! (Request::is('licenses*') ? ' class="active"' : '') !!}>
                                     <a href="{{ route('licenses.index') }}" {{$snipeSettings->shortcuts_enabled == 1 ? "accesskey=2" : ''}} tabindex="-1" data-tooltip="true" data-placement="bottom" data-title="{{ trans('general.licenses') }}">
                                         <x-icon type="licenses" class="fa-fw" />
@@ -181,7 +181,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                         <span class="sr-only">{{ trans('general.components') }}</span>
                                     </a>
                                 </li>
-                            @endcan
+                            @endcan -->
 
                             @can('index', \App\Models\Asset::class)
                                 <li>
@@ -221,7 +221,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                                 </a>
                                             </li>
                                         @endcan
-                                        @can('create', \App\Models\License::class)
+                                        <!-- @can('create', \App\Models\License::class)
                                             <li{!! (Request::is('licenses/create') ? ' class="active"' : '') !!}>
                                                 <a href="{{ route('licenses.create') }}" tabindex="-1">
                                                     <x-icon type="licenses" />
@@ -252,7 +252,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                                     {{ trans('general.component') }}
                                                 </a>
                                             </li>
-                                        @endcan
+                                        @endcan -->
                                         @can('create', \App\Models\User::class)
                                             <li {!! (Request::is('users/create') ? 'class="active"' : '') !!}>
                                                 <a href="{{ route('users.create') }}" tabindex="-1">
@@ -596,7 +596,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                 </ul>
                             </li>
                         @endcan
-                        @can('view', \App\Models\License::class)
+                        <!-- @can('view', \App\Models\License::class)
                             <li{!! (Request::is('licenses*') ? ' class="active"' : '') !!}>
                                 <a href="{{ route('licenses.index') }}">
                                     <x-icon type="licenses" class="fa-fw"/>
@@ -627,7 +627,7 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                     <span>{{ trans('general.components') }}</span>
                                 </a>
                             </li>
-                        @endcan
+                        @endcan -->
                         @can('view', \App\Models\PredefinedKit::class)
                             <li id="kits-sidenav-option"{!! (Request::is('kits') ? ' class="active"' : '') !!}>
                                 <a href="{{ route('kits.index') }}">
@@ -774,11 +774,11 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                             {{ trans('general.depreciation_report') }}
                                         </a>
                                     </li>
-                                    <li {{!! (Request::is('reports/licenses') ? ' class="active"' : '') !!}}>
+                                    <!-- <li {{!! (Request::is('reports/licenses') ? ' class="active"' : '') !!}}>
                                         <a href="{{ url('reports/licenses') }}">
                                             {{ trans('general.license_report') }}
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li {{!! (Request::is('reports/asset_maintenances') ? ' class="active"' : '') !!}}>
                                         <a href="{{ url('reports/asset_maintenances') }}">
                                             {{ trans('general.asset_maintenance_report') }}
@@ -789,11 +789,11 @@ dir="{{ Helper::determineLanguageDirection() }}">
                                             {{ trans('general.unaccepted_asset_report') }}
                                         </a>
                                     </li>
-                                    <li  {{!! (Request::is('reports/accessories') ? ' class="active"' : '') !!}}>
+                                    <!-- <li  {{!! (Request::is('reports/accessories') ? ' class="active"' : '') !!}}>
                                         <a href="{{ url('reports/accessories') }}">
                                             {{ trans('general.accessory_report') }}
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                         @endcan

@@ -48,9 +48,9 @@
         </a>
     </div><!-- ./col -->
 
-    <div class="col-lg-2 col-xs-6">
+    <!-- <div class="col-lg-2 col-xs-6">
         <a href="{{ route('licenses.index') }}" aria-hidden="true">
-            <!-- small license box -->
+            
             <div class="dashboard small-box bg-maroon">
                 <div class="inner">
                     <h3>{{ number_format($counts['license']) }}</h3>
@@ -65,11 +65,11 @@
                 </span>
             </div>
         </a>
-    </div><!-- ./col -->
+    </div>
 
 
     <div class="col-lg-2 col-xs-6">
-    <!-- small accessories box -->
+    
         <a href="{{ route('accessories.index') }}">
             <div class="dashboard small-box bg-orange">
                 <div class="inner">
@@ -85,10 +85,10 @@
                 </span>
             </div>
         </a>
-    </div><!-- ./col -->
+    </div>
 
     <div class="col-lg-2 col-xs-6">
-    <!-- small consumables box -->
+    
         <a href="{{ route('consumables.index') }}">
             <div class="dashboard small-box bg-purple">
                 <div class="inner">
@@ -104,10 +104,10 @@
                 </span>
             </div>
         </a>
-    </div><!-- ./col -->
+    </div>
 
     <div class="col-lg-2 col-xs-6">
-        <!-- small components box -->
+     
         <a href="{{ route('components.index') }}">
             <div class="dashboard small-box bg-yellow">
                 <div class="inner">
@@ -123,7 +123,7 @@
                 </span>
             </div>
         </a>
-    </div><!-- ./col -->
+    </div> -->
 
     <div class="col-lg-2 col-xs-6">
         <!-- small users box -->

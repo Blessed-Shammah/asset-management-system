@@ -52,7 +52,6 @@
             // This allows us to override the table defaults set below using the data-dash attributes
             var table = this;
             var data_with_default = function (key,default_value) {
-                console.dir($(table).data());
                 attrib_val = $(table).data(key);
                 if(attrib_val !== undefined) {
                     return attrib_val;
@@ -89,7 +88,8 @@
                 showColumnsToggleAll: data_with_default('show-columns-toggle-all', true),
                 showRefresh: data_with_default('show-refresh', true),
                 pagination: data_with_default('pagination', true),
-                sortOrder: data_with_default('sort-order', 'asc'),
+                sortOrder: data_with_default('sort-order', 'desc'),
+                sortName: data_with_default('sort-name', 'created_at'),
                 minimumCountColumns: data_with_default('minimum-count-columns', 2),
                 mobileResponsive: data_with_default('mobile-responsive', true),
                 maintainSelected: data_with_default('maintain-selected', true),
@@ -915,7 +915,6 @@
 
 
     function fileUploadNameFormatter(value) {
-        console.dir(value);
         if ((value) && (value.filename) && (value.url)) {
             return '<a href="' + value.url + '">' + value.filename + '</a>';
         }
